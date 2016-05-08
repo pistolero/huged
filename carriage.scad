@@ -135,11 +135,11 @@ module carriage(hspacing=32.1, vspacing=20, thickness=5, gt2_width=9) {
     rotate([-90,0,90])
     rope_clamp();
     
-    translate([0,-10.5-thickness-6-2.9+2.8,0])
+    translate([0,-10.5-thickness-6+2.05,0])
     mirror([0,1,0])
     difference() {
-    //joint_mount(80);
-    joint_assembly2(rod_spacing=80+20, xangle=-90+75, zangle=0);
+    joint_mount(100);
+    //joint_assembly2(rod_spacing=80+20, xangle=-90+75, zangle=0);
         
         // cut in center
         cube([70, 100, 100], true);
